@@ -90,7 +90,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Down Below\",\r\n    \"artist\": \"Roddy Ricch\",\r\n    \"album\": \"Feed Tha Streets 2\",\r\n    \"release_date\": \"2018-02-28T00:00:00Z\"\r\n}",
+					"raw": "{\r\n    \"id\": 7,\r\n    \"title\": \"Down Below 2\",\r\n    \"artist\": \"Roddy Rich\",\r\n    \"album\": \"Feed Tha Streets 2\",\r\n    \"release_date\": \"2018-02-28T00:00:00Z\",\r\n    \"do_you_like_the_song\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -98,7 +98,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/music/5/",
+					"raw": "http://127.0.0.1:8000/music/7/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -109,7 +109,7 @@
 					"port": "8000",
 					"path": [
 						"music",
-						"5",
+						"7",
 						""
 					]
 				}
