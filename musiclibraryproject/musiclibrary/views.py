@@ -38,6 +38,8 @@ class SongDetail(APIView):
 
     def put(self, request, pk):
         song = self.get_object(pk)
+        if song.do_you_like_the_song:
+            song.likes = 1 + int(song.likes)
         serializer = SongSerializer(song, data=request.data)
         if serializer.is_valid():
             serializer.save()
@@ -48,11 +50,4 @@ class SongDetail(APIView):
         song = self.get_object(pk)
         serializer = SongSerializer(song)
         song.delete()
-        return Response(serializer.data)
-
-    def likes(self, request, pk):
-        song = self.get_object(pk)
-        serializer = SongSerializer(song, data=request.data)
-        serializer.data.likes = 1
-        serializer.save()
         return Response(serializer.data)
